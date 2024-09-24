@@ -9,15 +9,15 @@ quotes = [
 ]
 
 images = [
-    "/static/images/albert_camus1.jpg.webp",
-    "/static/images/albert_camus2.jpg",
-    "/static/images/albert_camus3.jpg.webp"
+    "quotes/images/albert_camus1.jpg.webp",
+    "quotes/images/albert_camus2.jpg",
+    "quotes/images/albert_camus3.jpg.webp"
 ]
 
 def quote(request):
     selected_quote = random.choice(quotes)
     selected_image = random.choice(images)
-    
+
     context = {
         'quote': random.choice(quotes),
         'image': random.choice(images)
