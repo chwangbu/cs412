@@ -1,6 +1,17 @@
-/* General Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding:0;
+}
+
+/*ensuring that body takes up the entire page, doing this so footer stays at the bottom :)*/
+
 body {
+    display: flex;
+    flex-direction: column;
     font-family: 'Arial', sans-serif;
+    min-height: 100%;
+    justify-content: space-between;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -8,14 +19,13 @@ body {
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #000000;
     color: white;
     padding: 15px 0;
     text-align: center;
     font-size: 1.5em;
 }
 
-/* Navigation Styles */
 nav {
     margin-bottom: 20px;
 }
@@ -32,7 +42,6 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* Main Content Styles */
 .container {
     width: 80%;
     margin: 0 auto;
@@ -58,7 +67,6 @@ p {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Image Styles */
 img {
     display: block;
     max-width: 200px;
@@ -67,7 +75,6 @@ img {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-/* List of All Quotes */
 ul {
     list-style-type: none;
     padding: 0;
@@ -83,7 +90,6 @@ ul li {
     text-align: center;
 }
 
-/* About Page Styles */
 .about-section {
     background-color: #fff;
     padding: 20px;
@@ -103,9 +109,8 @@ ul li {
     line-height: 1.6;
 }
 
-/* Footer */
 footer {
-    background-color: #4CAF50;
+    background-color: #000000;
     color: white;
     text-align: center;
     padding: 10px 0;
